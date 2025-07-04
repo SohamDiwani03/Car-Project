@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="Services.css">
+    <script>
+        const menuIcon = document.getElementById("log");
+        const navMenu = document.querySelector("nav ul");
+
+        menuIcon.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgba(53, 53, 53, 0.5);
+            position: fixed;
+        }
+
+        label.logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: antiquewhite;
+            padding: 90px;
+            line-height: 80px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 10px;
+            overflow-y: auto;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0px 6px;
+            line-height: 80px;
+        }
+
+        nav a {
+            color: purple;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 7px 8px;
+            border-radius: 10px;
+        }
+
+        nav i {
+            font-size: medium;
+            padding: 5px 5px;
+            line-height: 80px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        a.active,
+        a:hover,
+        i:hover {
+            color: orangered;
+            border: 2px solid white;
+            transition: .4s;
+        }
+
+        nav #log {
+            color: azure;
+            font-size: 30px;
+            line-height: 80px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:1048px) {
+
+            label .logo {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+
+            nav ul {
+                margin-right: 20px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+        }
+
+        @media screen and (max-width:909px) {
+            nav #log {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #191c219c;
+                top: 80px;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav li {
+                display: block;
+                margin: 50px;
+                line-height: 30px;
+            }
+
+            nav a {
+                font-size: 20px;
+                color: white;
+            }
+
+            a.active,
+            a:hover,
+            i:hover {
+                border: none;
+                color: fuchsia;
+
+            }
+
+            nav ul.show {
+                left: 0px
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            label.logo {
+                font-size: 25px;
+                padding-left: 20px;
+            }
+
+            nav ul {
+                margin-right: 5px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+            nav i {
+                font-size: 15px;
+            }
+        }
+
+        section {
+            background-image: linear-gradient(#FF6B01, white, #FF6B01);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* height: calc(100vh-80px); */
+            height: 100vh;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            /* overflow-y: auto; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">CarDekho.com</label>
+
+        <ul class="show">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a class="active" href="navigationwithicon.html">home</a>
+            </li>
+            <li><i class="fa-solid fa-address-card"></i>
+                <a href="Aboutt.html">About</a>
+            </li>
+            <li><i class="fa-solid fa-taxi"></i>
+                <a href="Services.html">Services</a>
+            </li>
+            <li><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="Login.html">Login</a>
+            </li>
+            <li><i class="fa-solid fa-comment"></i>
+                <a href="Feedback.html">Feedback</a>
+            </li>
+
+        </ul>
+
+        <label for="" id="log">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+
+    <section>
+
+
+        <section>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; padding: 20px; background-image: linear-gradient(#FF6B01, white, #FF6B01);">
+
+                <div
+                    style="background:rgb(99, 97, 97); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-nhp-co-456980180-17597449.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Lamborghini Aventador</h3>
+                        <p>Extreme performance and iconic style.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(133, 101, 101); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-jdgromov-4651250.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Ferrari 488 GTB</h3>
+                        <p>Italian beauty with turbocharged power.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(255, 254, 254); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-hrk-gallery-245057798-30302942.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Mustang GT</h3>
+                        <p>Classic American muscle car.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(87, 78, 78); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-alexander-pollinger-137430820-10566898.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Audi R8</h3>
+                        <p>German engineering meets supercar class.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(97, 111, 94); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-cesar-sanchez-2149834931-30816058.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Chevrolet Camaro</h3>
+                        <p>Muscle and modern performance.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(99, 97, 97); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-om-mali-836558886-30599331.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Nissan GTR</h3>
+                        <p>Nicknamed "Godzilla" for a reason.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(133, 101, 101); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-jalmar-tonsau-153325-454604.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Bugatti Chiron</h3>
+                        <p>One of the fastest hypercars ever made.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-txomcs-289676241-27533317.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Koenigsegg Jesko</h3>
+                        <p>Swedish masterpiece of speed.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(87, 78, 78); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-david-viorel-1058126624-26957121.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Tesla Model S Plaid</h3>
+                        <p>Electric speed king with tech smarts.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background:rgb(97, 111, 94); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <img src="img/pexels-allanglezg-31632106.jpg"
+                        style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:15px;">
+                        <h3>Porsche 911 GT3</h3>
+                        <p>Iconic sports car built for the track.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            font-family: cursive;
+        }
+
+        nav{
+            height: 80px;
+            width: 100%;
+            background-color: rgba(53, 53, 53, 0.5);
+            position: fixed;
+        }
+        label.logo{
+            font-size: 35px;
+            font-weight: bold;
+            color: #F15524;
+            padding: 9P0px;
+            line-height: 80px;
+        }
+
+        nav ul{
+            float: right;
+            margin-right: 10px;
+            overflow-y: auto;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 0px 6px;
+            line-height: 80px;
+        }
+
+        nav a{
+            color: purple;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 7px 8px;
+            border-radius: 10px;
+        }
+
+        nav i{
+            font-size: medium;
+            padding: 5px 5px;
+            line-height: 80px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        a.active,a:hover,i:hover{
+            color: orangered;
+            border: 2px solid white;
+            transition: .4s;
+        }
+
+        nav #log{
+            color: azure;
+            font-size: 30px;
+            line-height: 80px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:1048px) {
+
+            label .logo{
+                font-size: 24px;
+                padding-left: 20px;
+            }
+
+            nav ul{
+                margin-right: 20px;
+            }
+
+            nav a{
+                font-size: 15px;
+            }
+            
+        }
+
+        @media screen and (max-width:909px) {
+            nav #log{
+                display: block;
+            }
+
+            nav ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #191c219c; 
+                top: 80px;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav li{
+                display: block;
+                margin: 50px;
+                line-height: 30px;
+            }
+
+            nav a{
+                font-size: 20px;
+                color: white;
+            }
+
+            a.active,a:hover,i:hover{
+                border: none;
+                color: fuchsia;
+
+            }
+
+            nav ul.show{
+                left:0px
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            label.logo{
+                font-size: 25px;
+                padding-left: 20px;
+            }
+
+            nav ul{
+                margin-right: 5px;
+            }
+
+            nav a{
+                font-size: 15px;
+            }
+
+            nav i{
+                font-size: 15px;
+            }
+        }
+        section{
+            background-image: url("car.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* height: calc(100vh-80px); */
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">CarDekho.com</label>
+
+        <ul class="show">
+            <li>
+                <i class="fa-solid fa-address-book"></i>
+                <a class="active" href="">home</a>
+            </li>
+            <li><i class="fa-solid fa-address-card"></i></i><a href="Aboutt.html">About</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="">Services</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="">Contact</a></li>
+            <li><i class="fa-solid fa-comment"></i><a href="">Feedback</a></li>
+
+        </ul>
+
+        <label for="" id="log">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <section>
+
+        </section>
+    </nav>
+</body>
+</html>

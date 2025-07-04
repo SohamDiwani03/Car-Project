@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgba(53, 53, 53, 0.5);
+            position: fixed;
+        }
+
+        label.logo {
+            font-size: 35px;
+            font-weight: bold;
+            /* color: antiquewhite; */
+            padding: 90px;
+            line-height: 80px;
+            background: linear-gradient(90deg,#de5500,#fc00ff);
+            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 10px;
+            overflow-y: auto;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0px 6px;
+            line-height: 80px;
+        }
+
+        nav a {
+            color: purple;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 7px 8px;
+            border-radius: 10px;
+        }
+
+        nav i {
+            font-size: medium;
+            padding: 5px 5px;
+            line-height: 80px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        a.active,
+        a:hover,
+        i:hover {
+            color: orangered;
+            border: 2px solid white;
+            transition: .4s;
+        }
+
+        nav #log {
+            color: azure;
+            font-size: 30px;
+            line-height: 80px;
+            float: right;
+            margin-right: 80px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:1048px) {
+
+            label .logo {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+
+            nav ul {
+                margin-right: 20px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+        }
+
+        @media screen and (max-width:909px) {
+            nav #log {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #191c219c;
+                top: 80px;
+                text-align: center;
+                transition: all .5s;
+                left: -100%;
+            }
+
+            nav li {
+                display: block;
+                margin: 50px;
+                line-height: 30px;
+            }
+
+            nav a {
+                font-size: 20px;
+                color: white;
+            }
+
+            a.active,
+            a:hover,
+            i:hover {
+                border: none;
+                color: fuchsia;
+
+            }
+
+            nav ul.show {
+                left: 0px
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            label.logo {
+                font-size: 25px;
+                padding-left: 20px;
+            }
+
+            nav ul {
+                margin-right: 5px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+            nav i {
+                font-size: 15px;
+            }
+        }
+
+        section {
+            background-image: url("img/car.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* height: calc(100vh-80px); */
+            height: 100vh;
+
+        }
+
+        .wel {
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 740px;
+            transform: translate(-50%,-50%);
+            
+        }
+        .text{
+            background: linear-gradient(90deg,#00dbde,#fc00ff);
+            font-size: 40px;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* h1 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+
+        h1 h3 {
+           color: #FF0000;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">CarDekho.com</label>
+
+        <ul class="show">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a class="active" href="">home</a>
+            </li>
+            <li><i class="fa-solid fa-address-book"></i><a href="Aboutt.html">About</a></li>
+            <li><i class="fa-solid fa-taxi"></i><a href="Services.html">Services</a></li>
+            <li><i class="fa-solid fa-arrow-right-to-bracket"></i><a href="Login.html">Login</a></li>
+            <li><i class="fa-solid fa-comment"></i><a href="Feedback.html">Feedback</a></li>
+
+        </ul>
+
+        <label for="" id="log">
+            <i class="fa fa-bars"></i>
+        </label>
+        </nav>
+
+        <section>
+            <div class="wel">
+                <h1 class="text">WelCome to CarDekho...</h1><br>
+                <h3 class="text">Choose Your Dream Car </h3>
+            </div>
+
+        </section>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+        .container {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 100%;
+            transition: all ease-in-out;
+            cursor: pointer;
+            margin-left: 550px;
+            position: relative;
+            top: 100px;
+            
+
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #C22834;
+            animation-name: hello;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes hello {
+            from {
+                width: 30%;
+            }
+
+            to {
+                width: 150%;
+            }
+
+        }
+        p {
+            color: #F15524;
+        }
+
+        .glassmorphism-about {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 30px rgba(241, 6, 6, 0);
+            width: 400px;
+            color: rgb(15, 14, 14);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: large;
+        }
+
+        p:hover {
+            color: #FF5733;
+            font-weight: bolder;
+        }
+
+        .glassmorphism-about:hover {
+            transform: scale(1.1);
+
+        }
+
+        .glassmorphism-about h1 {
+            margin-bottom: 20px;
+        }
+
+        .glassmorphism-about p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
